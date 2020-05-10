@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -14,16 +14,16 @@ body {
     background-color: #ffffff;
   }
 
-  a {
+a {
     text-decoration: none;
 
     color: #000000;
-  }
+}
 
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
@@ -38,9 +38,8 @@ img {
   
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-.header-navigation-list,
 .footer-navigation-list,
 .review-list,
 .subscriptions-features-list,
@@ -49,15 +48,22 @@ img {
     padding: 0px;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 47px;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
 }
 
-.header-title {
-    margin: 60px 0 46px;
+.header {
+    margin-bottom: 35px;
+    padding-top: 73px;
+}
+
+.header-logo {
+    display: block;
+    margin-bottom: 40px;
+
+    text-align: center;
 }
 
 .header-navigation-list {
@@ -65,13 +71,19 @@ img {
     justify-content: space-around;
     flex-wrap: wrap;
 
-    margin: 0 135px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
-.header-navigation-item a {
-    display: block;
-    padding: 5px;
+.header-navigation-item {
+    margin-bottom: 10px;
 
+    padding: 5px;
+}
+
+.header-navigation-link {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -80,8 +92,13 @@ img {
     color: #000000;
 }
 
-.header-navigation-item a:hover {
-    text-decoration: underline;
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+    color: #ff7931;
+}
+
+.header-navigation-link:active {
+    opacity: 0.7;
 }
         
 
