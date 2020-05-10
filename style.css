@@ -102,35 +102,71 @@ img {
 }
         
 
-.news a {
+.banner {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    margin-bottom: 44px;
+    position: relative;
+
+    margin-bottom: 45px;
+    padding-top: 135px;
+    padding-bottom: 47px;
 
     background-image: url('img/hotel_cover.jpg');
-    background-size: 1440px auto;
     background-repeat: no-repeat;
+    background-position: center;
     background-position: 50%;
+    background-color: #132231;
 }
 
-.news img {
-    margin: 46px 0 32px;
-}
+.banner::before {
+    content: '';
+  
+    position: absolute;
+    top: 47px;
+    left: calc(50% - 27px);
+  
+    width: 55px;
+    height: 55px;
+  
+    background-image: url("../img/hotel_icon.svg");
+    background-repeat: no-repeat;
+  }
 
-.news-title {
-    position: relative;
-}
-
-.news-text {
-    max-width: 456px;
-
-    margin: 139px 0 48px;
+.banner-title {
+    margin: 0;
+    margin-bottom: 123px;
 
     text-align: center;
+}
 
-    color:  #F7F7F7;
+.banner-title-link {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+.banner-title-link:hover,
+.banner-title-link:focus {
+    color: #ff7931;
+}
+
+.banner-title-link:active {
+    opacity: 0.7;
+}
+
+.banner-description {
+    max-width: 456px;
+    margin: auto;
+
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .review {
