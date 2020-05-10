@@ -121,7 +121,7 @@ img {
     width: 55px;
     height: 55px;
   
-    background-image: url("../img/hotel_icon.svg");
+    background-image: url("img/hotel_icon.svg");
     background-repeat: no-repeat;
   }
 
@@ -333,7 +333,7 @@ img {
     width: 25px;
     height: 25px;
   
-    background-image: url("../img/arrow_icon.svg");
+    background-image: url("img/arrow_icon.svg");
 }
 
 .footer {
@@ -425,13 +425,13 @@ img {
 }
   
 .instagram {
-    background-image: url("../img/instagram_icon.svg");
+    background-image: url("img/instagram_icon.svg");
 }
   
 .facebook {
-    background-image: url("../img/facebook_icon.svg");
+    background-image: url("img/facebook_icon.svg");
 }
   
 .twitter {
-    background-image: url("../img/twitter_icon.svg");
+    background-image: url("img/twitter_icon.svg");
 }
